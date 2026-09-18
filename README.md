@@ -17,7 +17,7 @@ This project is an integral part of the **Powered by Google Lyra** suite, design
 * 🎛️ **[LyraCodec](https://apps.microsoft.com/detail/9mz8kt923n6l?hl=en-US&gl=US)**  
   A modern, lightweight utility designed specifically for high-efficiency audio encoding and decoding. Built on the state-of-the-art Google Lyra architecture, this app allows you to seamlessly convert standard audio formats into ultra-low-bitrate Lyra files and back, maintaining impressive speech quality even at incredibly small file sizes.
 
-* 📖 **Ulenspigel** *(This project)*  
+* 📖 **[Ulenspigel](https://play.google.com/store/apps/details?id=com.KonstantinShramko.Ulenspigel)** *(This project)*  
   A standalone, showcase Android audiobook application demonstrating client-side playback of Lyra-encoded audiobooks with minimal storage footprint.
 
 * 📚 **[Lyra Books](https://play.google.com/store/apps/details?id=com.KonstantinShramko.LyraBooks)**  
