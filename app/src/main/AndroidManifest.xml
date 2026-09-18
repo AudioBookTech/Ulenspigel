@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Permissions for Android 13+ (API 33+) -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Ulenspigel"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Ulenspigel"
+        tools:targetApi="33">
+
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.App.Starting"
+            android:screenOrientation="fullSensor"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data android:name="book.tech" android:value="GoogleLyra" />
+            <meta-data android:name="book.books" android:value="1" />
+            <!-- Книга 1 -->
+            <meta-data android:name="book.title.1" android:value="Легенда про Уленшпігеля" />
+            <meta-data android:name="book.authorFirstName.1" android:value="Шарль" />
+            <meta-data android:name="book.authorLastName.1" android:value="Де Костер" />
+            <meta-data android:name="book.genre.1" android:value="Historical novel" />
+        </activity>
+
+        <!-- Background Media3 service declaration -->
+        <service
+            android:name=".PlaybackService"
+            android:foregroundServiceType="mediaPlayback"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="androidx.media3.session.MediaSessionService" />
+            </intent-filter>
+        </service>
+
+    </application>
+</manifest>
