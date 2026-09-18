@@ -37,7 +37,7 @@ This project is an integral part of the **Powered by Google Lyra** suite, design
 ## 🛠️ Getting Started
 
 ### Prerequisites
-* Android Studio (Ladybug / Hedgehog or newer recommended)
+* Android Studio (**Quail 4** or newer recommended)
 * Android SDK (API level compatible with project requirements)
 * NDK (if building Lyra native binaries locally)
 
